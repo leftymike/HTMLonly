@@ -14,5 +14,13 @@
 <ul><a href="The Links at Audubon">https://memphispubliclinks.com/the-links-at-audubon/</a></ul>
 
 <ul><a href="Overton Park 9">https://memphispubliclinks.com/overton/</a></ul>
+
+<button onclick="myFunction()">Today's swing thought</button>
+<script>
+ function myFunction() {
+     document.getElementById("demo").innerHTML = "Play Well!";
+    
+ }
+ </script>
 </body>
 </html>
