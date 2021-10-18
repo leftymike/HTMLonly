@@ -14,18 +14,19 @@
 
 <img src="https://golf.com/wp-content/uploads/2020/03/Shafts-1300-Wall-996x560.jpg">
 
-<ul><a href="https://memphispubliclinks.com/fox-meadows/">The Links at Fox Meadows</a></ul>
+<ul><li><a href="https://memphispubliclinks.com/fox-meadows/">The Links at Fox Meadows</a></li>
 
 
-<ul><a href="The Links at Galloway">https://memphispubliclinks.com/galloway/</a></ul>
+<li><a href="https://memphispubliclinks.com/galloway/">The Links at Galloway</a></li>
 
 
-<ul><a href="The Links at Audubon">https://memphispubliclinks.com/the-links-at-audubon/</a></ul>
+<li><a href="https://memphispubliclinks.com/the-links-at-audubon/">The Links at Audubon</a></li>
 
-<ul><a href="Overton Park 9">https://memphispubliclinks.com/overton/</a></ul>
+<li><a href="https://memphispubliclinks.com/overton/">Overton Park 9</a></li></ul>
 
 <button onclick="myFunction()">Today's swing thought</button>
 <button onclick="myFunction2()">Stop thinking</button>
+<button onclick="myFunction3()">Current weather conditions</button>
 
 <p id="demo"></p>
 
@@ -34,12 +35,17 @@
 <script>
 
 function myFunction2() {
-     document.getElementById("demo").innerHTML = "";
+     document.getElementById("demo").innerHTML = "Keep your head down!";
     
  }
  
  function myFunction() {
      document.getElementById("demo").innerHTML = "Play Well!";
+    
+ }
+
+ function myFunction3() {
+     document.getElementById("demo").innerHTML = "Partly cloudy with a 100% chance of golf";
     
  }
  </script>
