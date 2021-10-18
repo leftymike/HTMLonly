@@ -14,7 +14,7 @@
 
 <img src="https://golf.com/wp-content/uploads/2020/03/Shafts-1300-Wall-996x560.jpg">
 
-<ul><a href="#The Links at Fox Meadows">https://memphispubliclinks.com/fox-meadows/</a></ul>
+<ul><a href="https://memphispubliclinks.com/fox-meadows/">The Links at Fox Meadows</a></ul>
 
 
 <ul><a href="The Links at Galloway">https://memphispubliclinks.com/galloway/</a></ul>
@@ -23,12 +23,25 @@
 <ul><a href="The Links at Audubon">https://memphispubliclinks.com/the-links-at-audubon/</a></ul>
 
 <ul><a href="Overton Park 9">https://memphispubliclinks.com/overton/</a></ul>
-</body>
+
 <button onclick="myFunction()">Today's swing thought</button>
+<button onclick="myFunction2()">Stop thinking</button>
+
+<p id="demo"></p>
+
+
+
 <script>
+
+function myFunction2() {
+     document.getElementById("demo").innerHTML = "";
+    
+ }
+ 
  function myFunction() {
      document.getElementById("demo").innerHTML = "Play Well!";
     
  }
  </script>
+</body>
 </html>
