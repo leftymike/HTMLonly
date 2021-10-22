@@ -34,12 +34,12 @@
 
 <script>
 let code="password";
-wrong=True;
-while(wrong) {
+
+while(True) {
     let password = prompt("enter password");
     if (password == code) {
         alert ("correct password"); 
-        wrong = False;
+        break;
     } else {
         alert ("wrong password");
     }
