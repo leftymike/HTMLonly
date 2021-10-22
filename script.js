@@ -10,7 +10,7 @@ while(true) {
     }
 }
 
-var customerName = prompt("Please enter your name", "<name goes here>");
+var customerName = prompt("Please enter your name");
 
 if (customerName!= null) {
 
@@ -33,3 +33,23 @@ function myFunction3() {
      document.getElementById("demo").innerHTML = "Partly cloudy with a 100% chance of golf";
     
 }
+
+function guessNumber() {
+
+    const random = 5
+
+    let number = parseInt(prompt('Guess a number from 1 to 10: '));
+
+    while(number !== random) {
+        number = parseInt(prompt('Guess a number from 1 to 10: '));
+    }
+
+    if(number == random) {
+        alert('You guessed the correct number.');
+    }
+
+  }
+
+guessNumber();
+
+
