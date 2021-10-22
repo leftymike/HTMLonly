@@ -30,10 +30,18 @@
 
 <p id="demo"></p>
 
-
+<h1 id="welcome"></h1> 
 
 <script>
+var customerName = prompt("Please enter your name", "<name goes here>");
 
+if (customerName!= null) {
+
+    document.getElementById("welcome").innerHTML =
+
+    "Hello " + customerName + "! How are you today?";
+
+}
 function myFunction2() {
      document.getElementById("demo").innerHTML = "Keep your head down!";
     
