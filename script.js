@@ -52,20 +52,24 @@ function guessNumber() {
 
 guessNumber();
 
+function feedback() {  
+  var answer = prompt("How many balls do you use in a round?", " "); 
+
 let text = "";  
+ 
 
 if (answer < 6){
 for (let i=1; i <= answer; i++) {
-    text = "Thank you for leaving your feedback rating **" + answer + "**" + "<br>"; 
+    text = "That's too many!" + answer + "**" + "<br>"; 
 
     document.getElementById("demo").innerHTML = text;
     let img = document.createElement("img");
-    img.src = "sunshine.jpg";
+    img.src = "./golfball.png";
     document.querySelector("body").appendChild(img);
 
 }
 }    
-} else {
+ else {
   text = "Your rating is greater than 5, try again"; 
-} 
 }  
+}
