@@ -52,23 +52,20 @@ function guessNumber() {
 
 guessNumber();
 
-const ratingStars = [...document.getElementsByClassName("rating__star")];
+let text = "";  
 
-function executeRating(stars) {
-  const starClassActive = "rating__star fas fa-star";
-  const starClassInactive = "rating__star far fa-star";
-  const starsLength = stars.length;
-  let i;
-  stars.map((star) => {
-    star.onclick = () => {
-      i = stars.indexOf(star);
+if (answer < 6){
+for (let i=1; i <= answer; i++) {
+    text = "Thank you for leaving your feedback rating **" + answer + "**" + "<br>"; 
 
-      if (star.className===starClassInactive) {
-        for (i; i >= 0; --i) stars[i].className = starClassActive;
-      } else {
-        for (i; i < starsLength; ++i) stars[i].className = starClassInactive;
-      }
-    };
-  });
+    document.getElementById("demo").innerHTML = text;
+    let img = document.createElement("img");
+    img.src = "sunshine.jpg";
+    document.querySelector("body").appendChild(img);
+
 }
-executeRating(ratingStars);
+}    
+} else {
+  text = "Your rating is greater than 5, try again"; 
+} 
+}  
